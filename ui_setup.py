@@ -7,5 +7,9 @@ class App(customtkinter.CTk):
         self.title("BMI Calculator")
         self.geometry("500x500")
 
+        self.calculate_button = customtkinter.CTkButton(
+            self, text="Calculate BMI", command=self.calculate_bmi
+        )
+
 app = App()
 app.mainloop()
