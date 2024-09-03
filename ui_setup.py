@@ -11,5 +11,9 @@ class App(customtkinter.CTk):
             self, text="Calculate BMI", command=self.calculate_bmi
         )
 
+        self.calculate_button2 = customtkinter.CTkButton(
+            self, text="Calculate BMI2", command=self.calculate_bmi
+        )
+
 app = App()
 app.mainloop()
