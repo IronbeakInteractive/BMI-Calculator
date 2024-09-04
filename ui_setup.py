@@ -23,7 +23,7 @@ class App(customtkinter.CTk):
         self.calc_button = customtkinter.CTkButton(self, text="Calculate Your BMI",  command=lambda: calculate_bmi(self.height_entry, self.weight_entry, self.bmi_label))
         self.calc_button.pack(pady=(0, 20))
 
-        self.bmi_label = customtkinter.CTkLabel(self, text="Your BMI will appear here")
+        self.bmi_label = customtkinter.CTkLabel(self, text=" ")
         self.bmi_label.pack(pady=(20, 10))
 
 if __name__ == "__main__":
