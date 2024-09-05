@@ -1,3 +1,5 @@
+def detect_units(units_menu):
+    pass
 
 def calculate_bmi(height_entry, weight_entry, bmi_label):
     try:

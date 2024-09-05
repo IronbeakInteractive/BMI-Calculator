@@ -1,5 +1,5 @@
 import customtkinter
-from bmi_calculator import calculate_bmi
+from bmi_calculator import calculate_bmi, detect_units
 
 class App(customtkinter.CTk):
     def __init__(self):
@@ -7,6 +7,9 @@ class App(customtkinter.CTk):
 
         self.title("BMI Calculator")
         self.geometry("500x500")
+
+        self.units_menu = customtkinter.CTkOptionMenu(self, values=["Metric System", "British Units"])
+        self.units_menu.pack(pady=(20, 5))
         
         self.height_label = customtkinter.CTkLabel(self, text="Enter your height (cm):")
         self.height_label.pack(pady=(20, 5))
